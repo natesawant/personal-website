@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 
-export default function Home() {
+export default function Construction() {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -31,21 +31,21 @@ export default function Home() {
               loaded ? "opacity-100" : "opacity-0"
             }`}
           >
-            Hey, my name is
+            Hey!
           </h3>
           <h1
             className={`text-3xl text-accent-700 transition-opacity duration-300 delay-0 ${
               loaded ? "opacity-100" : "opacity-0"
             }`}
           >
-            Nate Sawant
+            Sorry!
           </h1>
           <h2
             className={`text-2xl text-secondary-400 font-light transition-opacity duration-500 delay-1000 ${
               loaded ? "opacity-100" : "opacity-0"
             }`}
           >
-            A software engineer based in Boston
+            This page is under construction.
           </h2>
         </div>
 
@@ -53,12 +53,7 @@ export default function Home() {
           className={`py-8 w-64 sm:w-96 transition-opacity duration-1000 delay-1000 ${
             loaded ? "opacity-100" : "opacity-0"
           }`}
-        >
-          <p>
-            I'm currently a computer science undergrad at Northeastern
-            University in Boston, MA.
-          </p>
-        </div>
+        ></div>
       </div>
     </div>
   );

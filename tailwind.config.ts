@@ -14,6 +14,7 @@ const config: Config = {
       primary: colors.white,
       secondary: colors.gray,
       accent: colors.orange,
+      background : '#0e192e'
     }
   },
   plugins: [],

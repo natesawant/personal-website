@@ -1,12 +1,12 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import NavBar from "./components/NavBar";
+import NavBar from "../components/NavBar";
 
-const poppins = Poppins({ weight: "400", subsets: ["latin"] });
+const poppins = Poppins({ weight: ["300", "400"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "swnt.io",
+  title: "Nate Sawant - swnt.io",
   description: "Personal website of Nate Sawant",
 };
 
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={`${poppins.className} bg-background`}>
         <NavBar />
         {children}
       </body>
