@@ -1,0 +1,18 @@
+---
+import NavbarItem from "./NavbarItem.astro";
+---
+
+<nav class="flex flex-row justify-between">
+  <span>swnt.io</span>
+  <ul class="flex flex-row">
+    <NavbarItem label="home" link="/" />
+    <NavbarItem label="projects" link="/projects" />
+    <NavbarItem label="about" link="/about" />
+  </ul>
+  <div>
+    <input id="menu-button" type="checkbox" class="hidden" /><label
+      for="menu-button"
+      class="checked:text-xl">Hello</label
+    >
+  </div>
+</nav>
