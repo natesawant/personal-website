@@ -1,0 +1,21 @@
+---
+import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+---
+
+<div class="w-full">
+  <Astronav>
+    <div class="flex flex-wrap justify-between">
+      <div class="w-full flex justify-between">
+        <span>swnt.io</span>
+        <MenuIcon class="block sm:hidden w-4 h-4 text-gray-800" />
+      </div>
+      <MenuItems class="hidden sm:block">
+        <ul class="flex flex-col sm:flex-row">
+          <li><a href="/">Home</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </MenuItems>
+    </div>
+  </Astronav>
+</div>
