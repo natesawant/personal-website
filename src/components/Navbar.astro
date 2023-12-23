@@ -1,21 +1,27 @@
 ---
-import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import { Astronav, MenuItems, MenuIcon, StickyHeader } from "astro-navbar";
+import NavbarLink from "./NavbarLink.astro";
 ---
 
-<div class="w-full">
+<StickyHeader
+  class="sticky top-0 w-full p-4 px-6 backdrop-blur-lg drop-shadow-md transition-all"
+>
   <Astronav>
-    <div class="flex flex-wrap justify-between">
-      <div class="w-full flex justify-between">
-        <span>swnt.io</span>
-        <MenuIcon class="block sm:hidden w-4 h-4 text-gray-800" />
+    <div class="flex flex-wrap sm:justify-between justify-end">
+      <div class="w-full sm:w-auto flex justify-between">
+        <a href="/" class="text-secondary text-xl"></a>
+        <MenuIcon class="block sm:hidden w-4 h-4 text-offwhite" />
       </div>
       <MenuItems class="hidden sm:block">
-        <ul class="flex flex-col sm:flex-row">
-          <li><a href="/">Home</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/about">About</a></li>
+        <ul
+          class="flex flex-col sm:flex-row sm:gap-4 justify-self-end text-right"
+        >
+          <NavbarLink link="/#" label="About" />
+          <NavbarLink link="/#experience" label="Experience" />
+          <NavbarLink link="/#projects" label="Projects" />
+          <NavbarLink link="/#contact" label="Contact" />
         </ul>
       </MenuItems>
     </div>
   </Astronav>
-</div>
+</StickyHeader>
