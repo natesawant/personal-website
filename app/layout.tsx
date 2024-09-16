@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Staatliches } from "next/font/google"
 import "./globals.css";
 
 const geistSans = localFont({
@@ -12,6 +13,12 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const staatliches = Staatliches({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-staatliches",
+  weight: "400"
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${staatliches.variable} antialiased`}
       >
         {children}
       </body>
