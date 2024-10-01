@@ -5,23 +5,30 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Nate Sawant — Software Engineer & Photographer">
   <main>
-    <div class="w-full h-screen bg-long-exposure">
+    <div id="" class="w-full h-screen bg-long-exposure">
       <div
         class="flex flex-col w-full sm:w-fit h-full align-middle justify-center sm:ps-32 sm:pb-48 gap-3"
       >
-        <h1 class="text-6xl text-center sm:text-9xl">Nate Sawant</h1>
-        <h3 class="text-2xl text-center italic">
+        <div class="flex flex-row items-center gap-2">
+          <img src="/logo.png" alt="" />
+          <h1
+            class="text-6xl text-white text-center uppercase sm:text-9xl font-medium"
+          >
+            ate Sawant
+          </h1>
+        </div>
+        <h3 class="text-2xl text-white text-center uppercase italic font-light">
           Software Engineer <br />and Photographer
         </h3>
       </div>
     </div>
-    <div class="relative w-full h-screen bg-black">
-      <div class="absolute top-0 bottom-0 left-0 bg-red-700 w-1"></div>
+    <div id="about" class="relative w-full h-screen bg-black">
+      <div class="absolute top-0 bottom-0 left-0 bg-accent-red w-1"></div>
       <div
         class="flex flex-col sm:flex-row w-full h-full gap-8 py-12 sm:justify-between items-center px-8 sm:px-32"
       >
         <img class="w-64 h-64 sm:w-96 sm:h-96" src="/portrait.png" alt="" />
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4 font-light">
           <p class="">
             My name is <b>Nate Sawant</b>, a software engineer based in <b
               >Boston, MA</b
@@ -68,7 +75,8 @@ import Layout from "../layouts/Layout.astro";
           skills: ["Python", "MongoDB", "Java", "Spring Framework"],
         },
         {
-          title: "SDE Co-op",
+          title: "Software Data Engineer Co-op",
+          shortTitle: "SDE Co-op",
           team: "Fidelity Investments",
           date: "Jan 2023 — Jun 2023",
           years: "2023",
