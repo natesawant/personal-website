@@ -1,0 +1,189 @@
+---
+import Showcase from "../components/Showcase.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Nate Sawant — Software Engineer & Photographer">
+  <main>
+    <div class="w-full h-screen bg-long-exposure">
+      <div
+        class="flex flex-col w-full sm:w-fit h-full align-middle justify-center sm:ps-32 sm:pb-48 gap-3"
+      >
+        <h1 class="text-6xl text-center sm:text-9xl">Nate Sawant</h1>
+        <h3 class="text-2xl text-center italic">
+          Software Engineer <br />and Photographer
+        </h3>
+      </div>
+    </div>
+    <div class="relative w-full h-screen bg-black">
+      <div class="absolute top-0 bottom-0 left-0 bg-red-700 w-1"></div>
+      <div
+        class="flex flex-col sm:flex-row w-full h-full gap-8 py-12 sm:justify-between items-center px-8 sm:px-32"
+      >
+        <img class="w-64 h-64 sm:w-96 sm:h-96" src="/img/portrait.png" alt="" />
+        <div class="flex flex-col gap-4">
+          <p class="">
+            My name is <b>Nate Sawant</b>, a software engineer based in <b
+              >Boston, MA</b
+            >. I’m about to graduate from <b>Northeastern University</b> with a BS
+            in <b>Computer Science</b>, concentrating in <b
+              >Artificial Intelligence</b
+            >.
+          </p>
+          <p class="">
+            I love working on a wide range of projects, from <b
+              >computer vision</b
+            > to <b>game development</b> to <b>web development</b>. I’ve also
+            had the privilege of working with so many talented people and on
+            different projects through <b>Generate</b>, Northeastern’s
+            student-led product development studio. You see some of them below.
+          </p>
+          <p class="">
+            Outside of my academics and professional life (which you can also
+            see below), I enjoy spending my time outside either <b
+              >climbing rocks</b
+            > and
+            <b>shooting photos</b> of the great outdoors.
+          </p>
+        </div>
+      </div>
+    </div>
+    <Showcase
+      header="Experience"
+      items={[
+        {
+          title: "Software Engineer Co-op",
+          shortTitle: "SWE Co-op",
+          team: "Babel Street",
+          date: "Jan 2024 — Jun 2024",
+          years: "2024",
+          body: `Significantly improved system performance by doubling download speeds
+        through multi-threading and reducing memory usage by 20% during Named
+        Entity Recognition (NER) training. Conducted an in-depth analysis of NER
+        categorical changes across millions of items using Python and ontology,
+        ensuring consistent data stability. Additionally, streamlined
+        open-source compliance processes by automating license report
+        generation, resulting in significant time savings for each Maven
+        project.`,
+          skills: ["Python", "MongoDB", "Java", "Spring Framework"],
+        },
+        {
+          title: "SDE Co-op",
+          team: "Fidelity Investments",
+          date: "Jan 2023 — Jun 2023",
+          years: "2023",
+          body: `Streamlined development by implementing a shared code snippet tool for 
+          VSCode and Jupyter Lab using TypeScript. Conducted ETL processes on over 10 
+          websites, scraping data points for more than 65,000 items into SQL using 
+          Python. Created a Tableau dashboard to track usage patterns across 100+ 
+          datasets, enabling informed decision-making.`,
+          skills: ["Python", "SQL", "TypeScript", "Selenium"],
+        },
+        {
+          title: "Research Assistant",
+          team: "Northeastern University",
+          shortTeam: "Northeastern U.",
+          date: "Oct 2021 — Aug 2022",
+          years: "2021-22",
+          body: `Streamlined development by implementing a shared code snippet tool for 
+          VSCode and Jupyter Lab using TypeScript. Conducted ETL processes on over 10 
+          websites, scraping data points for more than 65,000 items into SQL using 
+          Python. Created a Tableau dashboard to track usage patterns across 100+ 
+          datasets, enabling informed decision-making.`,
+          skills: ["C#", "Unity", "OpenXR"],
+        },
+      ]}
+    />
+    <Showcase
+      header="Projects"
+      flipped
+      items={[
+        {
+          title: "Snapper",
+          team: "Generate Product Development",
+          shortTeam: "Generate",
+          date: "Sep 2024 — Dec 2024",
+          years: "2024",
+          body: `Lorem ipsum odor amet, consectetuer adipiscing elit. Sollicitudin non 
+          condimentum litora tempus bibendum arcu. Tincidunt posuere turpis, ex nisl 
+          nibh amet phasellus fusce. Mattis tincidunt etiam volutpat commodo; bibendum 
+          fermentum congue. Scelerisque lectus nam tincidunt imperdiet fusce velit ac 
+          amet. Quisque pretium sodales turpis hendrerit laoreet; posuere justo luctus. 
+          Inceptos quam quisque nulla cursus lacinia.`,
+          skills: ["Python", "MongoDB", "Java", "Spring Framework"],
+        },
+        {
+          title: "DevDB",
+          team: "Generate Product Development",
+          shortTeam: "Generate",
+          date: "May 2024 — Jun 2024",
+          years: "2024",
+          body: `Lorem ipsum odor amet, consectetuer adipiscing elit. Sollicitudin non 
+          condimentum litora tempus bibendum arcu. Tincidunt posuere turpis, ex nisl 
+          nibh amet phasellus fusce. Mattis tincidunt etiam volutpat commodo; bibendum 
+          fermentum congue. Scelerisque lectus nam tincidunt imperdiet fusce velit ac 
+          amet. Quisque pretium sodales turpis hendrerit laoreet; posuere justo luctus. 
+          Inceptos quam quisque nulla cursus lacinia.`,
+          skills: ["PostgreSQL", "AWS", "TypeScript", "tRPC", "Prisma ORM"],
+        },
+        {
+          title: "Gear Rental Site",
+          team: "Northeastern University Hus-skiers and Outing Club",
+          shortTeam: "NUHOC",
+          date: "Apr 2024 — Jun 2024",
+          years: "2024",
+          body: `Lorem ipsum odor amet, consectetuer adipiscing elit. Sollicitudin non 
+          condimentum litora tempus bibendum arcu. Tincidunt posuere turpis, ex nisl 
+          nibh amet phasellus fusce. Mattis tincidunt etiam volutpat commodo; bibendum 
+          fermentum congue. Scelerisque lectus nam tincidunt imperdiet fusce velit ac 
+          amet. Quisque pretium sodales turpis hendrerit laoreet; posuere justo luctus. 
+          Inceptos quam quisque nulla cursus lacinia.`,
+          skills: ["PostgreSQL", "TypeScript", "React", "Prisma ORM", "tRPC"],
+        },
+        {
+          title: "Tubender",
+          team: "Generate Product Development",
+          shortTeam: "Generate",
+          date: "Jan 2024 — Apr 2024",
+          years: "2024",
+          body: `Lorem ipsum odor amet, consectetuer adipiscing elit. Sollicitudin non 
+          condimentum litora tempus bibendum arcu. Tincidunt posuere turpis, ex nisl 
+          nibh amet phasellus fusce. Mattis tincidunt etiam volutpat commodo; bibendum 
+          fermentum congue. Scelerisque lectus nam tincidunt imperdiet fusce velit ac 
+          amet. Quisque pretium sodales turpis hendrerit laoreet; posuere justo luctus. 
+          Inceptos quam quisque nulla cursus lacinia.`,
+          skills: ["C++", "Electron", "TypeScript", "React"],
+        },
+        {
+          title: "Voxeti",
+          team: "Generate Product Development",
+          shortTeam: "Generate",
+          date: "Sep 2023 — Dec 2023",
+          years: "2023",
+          body: `Lorem ipsum odor amet, consectetuer adipiscing elit. Sollicitudin non 
+          condimentum litora tempus bibendum arcu. Tincidunt posuere turpis, ex nisl 
+          nibh amet phasellus fusce. Mattis tincidunt etiam volutpat commodo; bibendum 
+          fermentum congue. Scelerisque lectus nam tincidunt imperdiet fusce velit ac 
+          amet. Quisque pretium sodales turpis hendrerit laoreet; posuere justo luctus. 
+          Inceptos quam quisque nulla cursus lacinia.`,
+          skills: ["Golang", "MongoDB", "C++", "React", "TypeScript"],
+        },
+        {
+          title: "Reinforcement Learning Agent",
+          shortTitle: "RL Agent",
+          team: "Artificial Intelligence (CS4100)",
+          shortTeam: "CS4100",
+          date: "Mar 2023",
+          years: "2023",
+          body: `Lorem ipsum odor amet, consectetuer adipiscing elit. Sollicitudin non 
+          condimentum litora tempus bibendum arcu. Tincidunt posuere turpis, ex nisl 
+          nibh amet phasellus fusce. Mattis tincidunt etiam volutpat commodo; bibendum 
+          fermentum congue. Scelerisque lectus nam tincidunt imperdiet fusce velit ac 
+          amet. Quisque pretium sodales turpis hendrerit laoreet; posuere justo luctus. 
+          Inceptos quam quisque nulla cursus lacinia.`,
+          skills: ["PyTorch", "C#", "Unity"],
+        },
+      ]}
+    />
+  </main>
+</Layout>
