@@ -16,15 +16,33 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="text-white">
+  <body class="text-off-white font-inter">
     <header
-      class="fixed top-0 left-0 right-0 flex flex-row justify-between px-4 py-2"
+      class="fixed top-0 left-0 right-0 flex flex-row justify-between px-4 py-2 z-50"
     >
-      <div>Nate Sawant</div>
+      <a href="#" class="flex flex-row items-center gap-0.5">
+        <img class="h-6" src="/logo.png" alt="" />
+        <h1 class="text-base text-white text-center uppercase font-normal">
+          ate Sawant
+        </h1>
+      </a>
+      <div class="flex flex-row gap-4 text-white">
+        <a href="/#about">About</a>
+        <a href="/#experience">Experience</a>
+        <a href="/#projects">Projects</a>
+      </div>
       <div class="flex flex-row justify-between gap-4">
-        <button>Github</button>
-        <button>LinkedIn</button>
-        <button>Instagram</button>
+        <a target="_blank" href="https://github.com/natesawant/"
+          ><img class="w-6" src="/github.png" alt="" /></a
+        >
+        <a target="_blank" href="https://www.linkedin.com/in/natesawant"
+          ><img class="w-6" src="/linkedin.png" alt="" /></a
+        >
+        <a
+          target="_blank"
+          href="https://www.instagram.com/natesawantphotography"
+          ><img class="w-6" src="/instagram.png" alt="" /></a
+        >
       </div>
     </header>
     <slot />

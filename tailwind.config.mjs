@@ -8,7 +8,12 @@ export default {
 				'skyline': "url('/img/skyline.png')",
 				'franconia': "url('/img/franconia.png')",
 			},
+			colors: {
+				'off-white': "#C5C5C5",
+				'accent-red': "#F30600",
+				'skill-red': "#BE0500"
+			}
 		},
 	},
-	plugins: [],
+	plugins: [require('tailwindcss-font-inter')]
 }
