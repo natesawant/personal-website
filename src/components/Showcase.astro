@@ -36,7 +36,7 @@ const createItemId = (item: Item) => {
   >
   </div>
   <h1
-    class={` text-6xl text-white sm:text-7xl font-medium uppercase ${flipped ? "text-right" : "text-left"}`}
+    class={` text-6xl text-white sm:text-7xl font-medium uppercase text-center ${flipped ? "sm:text-right" : "sm:text-left"}`}
   >
     {header}
   </h1>
@@ -82,7 +82,10 @@ const createItemId = (item: Item) => {
               {items
                 .filter((item) => item.years === year)
                 .map((item) => (
-                  <a href={"#" + createItemId(item)}>
+                  <a
+                    class="hover:text-accent-red duration-150 transition-colors"
+                    href={"#" + createItemId(item)}
+                  >
                     <li>
                       {item.shortTitle ? item.shortTitle : item.title} —{" "}
                       {item.shortTeam ? item.shortTeam : item.team}
