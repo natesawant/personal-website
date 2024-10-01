@@ -10,9 +10,9 @@ import Layout from "../layouts/Layout.astro";
         class="flex flex-col w-full sm:w-fit h-full justify-center sm:ps-32 sm:pb-48 gap-3"
       >
         <div class="flex flex-row justify-center items-center gap-0.5 sm:gap-2">
-          <img class="h-20 sm:h-full" src="/logo.png" alt="" />
+          <img class="h-20 sm:h-32 md:h-full" src="/logo.png" alt="" />
           <h1
-            class="text-5xl text-white text-center uppercase sm:text-9xl font-medium"
+            class="text-5xl text-white text-center uppercase sm:text-7xl md::text-9xl font-medium text-nowrap"
           >
             ate Sawant
           </h1>
@@ -25,9 +25,13 @@ import Layout from "../layouts/Layout.astro";
     <div id="about" class="relative w-full h-screen bg-black">
       <div class="absolute top-0 bottom-0 left-0 bg-accent-red w-1"></div>
       <div
-        class="flex flex-col sm:flex-row w-full h-full gap-12 sm:gap-28 py-12 sm:justify-between items-center px-8 sm:px-24"
+        class="flex flex-col md:flex-row w-full h-full gap-12 md:gap-28 py-12 md:justify-between items-center px-8 md:px-24"
       >
-        <img class="h-64 sm:h-96" src="/portrait_cropped.png" alt="" />
+        <img
+          class="h-64 sm:h-72 md:h-80 lg:h-96"
+          src="/portrait_cropped.png"
+          alt=""
+        />
         <div class="flex flex-col gap-4 font-light">
           <p class="">
             My name is <b>Nate Sawant</b>, a software engineer based in <b

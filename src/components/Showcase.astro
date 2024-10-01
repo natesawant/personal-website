@@ -29,19 +29,19 @@ const createItemId = (item: Item) => {
 
 <div
   id={header.toLowerCase()}
-  class="relative w-full min-h-screen bg-skyline bg-black p-4 sm:p-32 flex flex-col gap-5"
+  class="relative w-full min-h-screen bg-skyline bg-black p-4 sm:p-12 md:p-20 lg:p-32 flex flex-col gap-5"
 >
   <div
     class={`absolute top-0 bottom-0 ${flipped ? "left-0" : "right-0"} bg-accent-red w-1`}
   >
   </div>
   <h1
-    class={` text-6xl text-white sm:text-7xl font-medium uppercase text-center ${flipped ? "sm:text-right" : "sm:text-left"}`}
+    class={` text-6xl text-white sm:text-7xl font-medium uppercase text-center ${flipped ? "xl:text-right" : "xl:text-left"}`}
   >
     {header}
   </h1>
   <div
-    class={`flex flex-col-reverse ${flipped ? "sm:flex-row-reverse" : "sm:flex-row"}`}
+    class={`flex flex-col-reverse ${flipped ? "xl:flex-row-reverse" : "xl:flex-row"}`}
   >
     <div class="flex flex-col gap-8">
       {
