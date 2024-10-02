@@ -27,7 +27,7 @@ import Layout from "../layouts/Layout.astro";
     <div id="about" class="relative w-full h-screen bg-black">
       <div class="absolute top-0 bottom-0 left-0 bg-accent-red w-1"></div>
       <div
-        class="flex flex-col md:flex-row w-full h-full gap-12 md:gap-28 py-12 md:justify-between items-center px-8 md:px-24"
+        class="flex flex-col md:flex-row w-full h-full gap-12 md:gap-48 py-12 md:justify-between items-center px-8 md:px-48"
       >
         <img
           class="h-64 sm:h-72 md:h-80 lg:h-96"
@@ -68,6 +68,7 @@ import Layout from "../layouts/Layout.astro";
           title: "Software Engineer Co-op",
           shortTitle: "SWE Co-op",
           team: "Babel Street",
+          href: "https://www.babelstreet.com/babel-street-analytics",
           date: "Jan 2024 — Jun 2024",
           years: "2024",
           body: `Significantly improved system performance by doubling download speeds
@@ -84,6 +85,7 @@ import Layout from "../layouts/Layout.astro";
           title: "Software Data Engineer Co-op",
           shortTitle: "SDE Co-op",
           team: "Fidelity Investments",
+          href: "https://www.fidelity.com/",
           date: "Jan 2023 — Jun 2023",
           years: "2023",
           body: `Successfully streamlined development processes by leading the creation 
@@ -119,6 +121,21 @@ import Layout from "../layouts/Layout.astro";
       header="Projects"
       flipped
       items={[
+        {
+          title: "Portfolio Website",
+          team: "Personal",
+          shortTeam: "Personal",
+          href: "https://github.com/natesawant/personal-website",
+          date: "Oct 2024",
+          years: "2024",
+          body: `Lorem ipsum odor amet, consectetuer adipiscing elit. Sollicitudin non 
+          condimentum litora tempus bibendum arcu. Tincidunt posuere turpis, ex nisl 
+          nibh amet phasellus fusce. Mattis tincidunt etiam volutpat commodo; bibendum 
+          fermentum congue. Scelerisque lectus nam tincidunt imperdiet fusce velit ac 
+          amet. Quisque pretium sodales turpis hendrerit laoreet; posuere justo luctus. 
+          Inceptos quam quisque nulla cursus lacinia.`,
+          skills: ["Astro", "React", "TypeScript", "Tailwind"],
+        },
         {
           title: "Snapper",
           team: "Generate Product Development",
@@ -174,6 +191,21 @@ import Layout from "../layouts/Layout.astro";
           amet. Quisque pretium sodales turpis hendrerit laoreet; posuere justo luctus. 
           Inceptos quam quisque nulla cursus lacinia.`,
           skills: ["C++", "Electron", "TypeScript", "React"],
+        },
+        {
+          title: "Chess Engine",
+          team: "Personal",
+          shortTeam: "Personal",
+          href: "https://github.com/natesawant/chess-engine/",
+          date: "Dec 2023",
+          years: "2023",
+          body: `Lorem ipsum odor amet, consectetuer adipiscing elit. Sollicitudin non 
+          condimentum litora tempus bibendum arcu. Tincidunt posuere turpis, ex nisl 
+          nibh amet phasellus fusce. Mattis tincidunt etiam volutpat commodo; bibendum 
+          fermentum congue. Scelerisque lectus nam tincidunt imperdiet fusce velit ac 
+          amet. Quisque pretium sodales turpis hendrerit laoreet; posuere justo luctus. 
+          Inceptos quam quisque nulla cursus lacinia.`,
+          skills: ["Golang"],
         },
         {
           title: "Voxeti",

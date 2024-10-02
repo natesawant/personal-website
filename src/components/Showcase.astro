@@ -5,6 +5,7 @@ interface Item {
   team: string;
   shortTeam?: string;
   date: string;
+  href?: string;
   years: string;
   body: string;
   skills: string[];
@@ -48,12 +49,21 @@ const createItemId = (item: Item) => {
         items.map((item) => (
           <div
             id={createItemId(item)}
-            class="flex flex-col bg-black p-4 sm:p-12 gap-5"
+            class="flex flex-col backdrop-blur-sm p-4 sm:p-12 gap-5 bg-none hover:bg-black transition-colors duration-100"
           >
             <div>
-              <h2 class="text-xl font-light text-white">
-                {item.title} • {item.team}
-              </h2>
+              <a
+                class={`flex flex-row justify-start items-center gap-3 origin-bottom-left ${item.href && "hover:scale-105 transition-transform duration-100"}`}
+                href={item.href}
+                target="_blank"
+              >
+                <h2 class="text-xl font-light text-white">
+                  {item.title} • {item.team}
+                </h2>
+                {item.href && (
+                  <img class="h-4" src="/external-link-white.png" />
+                )}
+              </a>
               <h3 class="uppercase text-white text-lg font-normal">
                 {item.date}
               </h3>
@@ -61,7 +71,7 @@ const createItemId = (item: Item) => {
             <p class="text-lg font-extralight">{item.body}</p>
             <div class="flex flex-row gap-3 text-nowrap text-base flex-wrap">
               {item.skills.map((skill) => (
-                <div class="px-3 py-1 rounded-full font-normal text-white bg-skill-red w-min">
+                <div class="px-3 py-1 rounded-full font-normal text-white bg-skill-red w-min hover:scale-110 origin-center transition-transform duration-150">
                   {skill}
                 </div>
               ))}
@@ -72,8 +82,9 @@ const createItemId = (item: Item) => {
     </div>
     <div></div>
     <div
-      class="bg-black p-4 sm:p-12 flex flex-col gap-5 text-nowrap font-extralight h-fit"
+      class="bg-black p-4 sm:p-12 flex flex-col gap-2 text-nowrap font-extralight h-fit"
     >
+      <h1 class="text-white font-semibold">{header} Overview</h1>
       {
         Array.from(uniqueYears.values()).map((year: string) => (
           <div>

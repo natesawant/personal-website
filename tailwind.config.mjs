@@ -11,7 +11,8 @@ export default {
 			colors: {
 				'off-white': "#C5C5C5",
 				'accent-red': "#F30600",
-				'skill-red': "#BE0500"
+				'skill-red': "#BE0500",
+				'card-select': '#141414'
 			}
 		},
 	},
